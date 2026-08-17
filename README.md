@@ -126,10 +126,11 @@ Compile the demonstration program using a C++17-compatible compiler:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -pedantic main.cpp ChessBoard.cc ChessPiece.cc PawnPiece.cc RookPiece.cc BishopPiece.cc KingPiece.cc -o chess-demo
-
+```
 To run:
 ```bash
 ./chess-demo
+```
 
 
 ## Skills
