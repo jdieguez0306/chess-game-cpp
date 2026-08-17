@@ -120,17 +120,16 @@ This includes implementation of:
 * Copy constructor
 * Copy-assignment operator
 
-## Building the Project
+## Build and Run
 
-The source files can be compiled using a C++17-compatible compiler.
-
-For example:
+Compile the demonstration program using a C++17-compatible compiler:
 
 ```bash
-g++ -std=c++17 -Wall -Wextra -pedantic -c *.cc
-```
+g++ -std=c++17 -Wall -Wextra -pedantic main.cpp ChessBoard.cc ChessPiece.cc PawnPiece.cc RookPiece.cc BishopPiece.cc KingPiece.cc -o chess-demo
 
-A runnable demonstration program can also be added using a `main.cpp` file.
+To run:
+```bash
+./chess-demo
 
 
 ## Skills
