@@ -4,11 +4,11 @@
 using namespace Student;
 using Student::ChessBoard;
 
-// Constructor for BishopPiece
+// Constructor for PawnPiece
 PawnPiece::PawnPiece(ChessBoard &board, Color color, int row, int column): 
     ChessPiece(board, color, row, column) {}
 
-// Get Type of Piece (Bishop)
+// Get Type of Piece (Pawn)
 Type PawnPiece:: getType() {
     return ::Pawn;
 }
