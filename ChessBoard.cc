@@ -3,7 +3,7 @@
 #include "RookPiece.hh"
 #include "BishopPiece.hh"
 #include "KingPiece.hh"
-//#include <iostream> // DELETE After debug
+//#include <iostream>
 
 using Student::ChessBoard;
 
@@ -113,7 +113,6 @@ void ChessBoard::createChessPiece(Color col, Type ty, int startRow, int startCol
     board[startRow][startColumn] = newChessPiece;
 }
 
-// TODO: Part 2, Implement Part 2
 bool ChessBoard::movePiece(int fromRow, int fromColumn, int toRow, int toColumn) {
      
     // Check if a piece exists at the start position
@@ -169,17 +168,17 @@ bool ChessBoard::isOccupied(int row, int column) {
     return false;
 }
 
-// Checks of piece's pathway is obstructed
+// Checks if piece's pathway is obstructed
 bool ChessBoard:: isPathObstructed(int fromRow, int fromCol, int toRow, int toCol) {
     // Gets direction the piece will be moving (1 or -1) or staying in same row/column 
     int rowDir = (toRow - fromRow) == 0 ? 0 : (toRow - fromRow) / abs(toRow - fromRow);
     int colDir = (toCol - fromCol) == 0 ? 0 : (toCol - fromCol) / abs(toCol - fromCol);
 
-    // update row and column if piece will be moving
+    // Update row and column if piece will move
     int currRow = fromRow + rowDir;
     int currCol = fromCol + colDir;
 
-    // Makes sure the Piece is moving, not staying in the same place
+    // Ensure the Piece is moving, not staying in the same place
     if (rowDir == 0 && colDir == 0) {
         return false;
     }
@@ -240,7 +239,7 @@ bool ChessBoard::isValidMove(int fromRow, int fromColumn, int toRow, int toColum
         return false;
     }
 
-    // TODO Part 3: Check when piece is moved, will King be under threat of being checked
+    // TCheck when piece is moved, will King be under threat of being checked
     // Temporary move to see the potential threat to king piece (move piece logic)
     board.at(toRow).at(toColumn) = curr_piece;
     curr_piece->setPosition(toRow, toColumn);
@@ -285,7 +284,6 @@ bool ChessBoard::isValidMove(int fromRow, int fromColumn, int toRow, int toColum
     return true;
 }
 
-// TODO: Part 2
 bool ChessBoard::isPieceUnderThreat(int row, int column){
     ChessPiece* threat_piece = board[row][column];
     
