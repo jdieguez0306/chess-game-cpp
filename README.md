@@ -3,7 +3,21 @@
 An object-oriented chess engine written in C++ that models chess pieces, board state, movement rules, captures, and threat detection using inheritance and polymorphism.
 
 This project was developed to practice object-oriented programming principles and C++ memory management while implementing the core logic of a chess system.
+## Project Background
 
+This project was completed as part of my Computer Engineering coursework
+at Purdue University and is included as a coding sample demonstrating my
+experience with C++, object-oriented programming, debugging, and dynamic
+memory management.
+
+For the assignment, header files defining the class interfaces and required
+function signatures were provided. I implemented the corresponding `.cc`
+source files, including the chess-piece movement logic, board operations,
+move validation, threat detection, deep-copy behavior, and dynamic memory
+management.
+
+The project was developed and tested incrementally throughout the course,
+using provided test cases as well as additional edge cases during debugging.
 ## Features
 
 * Object-oriented chess piece hierarchy
