@@ -10,7 +10,7 @@ PawnPiece::PawnPiece(ChessBoard &board, Color color, int row, int column):
 
 // Get Type of Piece (Bishop)
 Type PawnPiece:: getType() {
-    return ::Pawn; // what does the double colon before type do?
+    return ::Pawn;
 }
 
 bool PawnPiece::canMoveToLocation(int toRow, int toColumn) {
