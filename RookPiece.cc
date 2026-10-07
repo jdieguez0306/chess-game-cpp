@@ -4,13 +4,13 @@
 using namespace Student;
 using Student::ChessBoard;
 
-// Constructor for BishopPiece
+// Constructor for RookPiece
 RookPiece::RookPiece(ChessBoard &board, Color color, int row, int column): 
     ChessPiece(board, color, row, column) {}
 
-// Get Type of Piece (Bishop)
+// Get Type of Piece (Rook)
 Type RookPiece:: getType() {
-    return ::Type::Rook; // what does the double colon before type do?
+    return ::Type::Rook;
 }
 
 bool RookPiece::canMoveToLocation(int toRow, int toColumn) {
